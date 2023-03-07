@@ -113,7 +113,7 @@ p{
         justify-content: center;
     }
     .location-lobanovskiy, .location-boychuk{
-        margin-bottom: 30vw;
+        margin-bottom: 50vw;
         font-size: 3vw;
     }
     .location-boychuk{
@@ -145,6 +145,7 @@ p{
     }
     .location-lobanovskiy, .location-boychuk{
         font-size: 4vw;
+        margin-bottom: 80vw;
     }
 }
 
@@ -159,6 +160,6 @@ p{
         align-self: center;
     }
     .location-boychuk{
-        margin-bottom: 50vw;
+        margin-bottom: 100vw;
     }
 }
