@@ -20,7 +20,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 15vw;
+    padding-bottom: 5vw;
 }
 
 /*ПРАВА ЧАСТИНА СТОРІНКИ*/
@@ -41,7 +41,7 @@ body{
     font-size: 4vw;
     margin: 0;
     margin-left: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 1vw;
     padding: 0;   
 }
 
@@ -69,56 +69,29 @@ p{
     display: contents;
 
 }
-  /* Стилі для випадаючого списку */
-  /* Стилі для кнопки випадаючого списку */
-.dropbtn {
-    background-color: #393939af;
-    color: white;
-    width: 40vw;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
+ 
+ /*Стилі для  таблиці*/
+ table{
+    width: 90%;
+    margin-left: 3vw;
+ }
+tbody{
     font-family: Raleway;
-    margin-left: 5vw;
+    font-size: 1.1vw;
+}
+th{
+    font-family: Raleway;
+    font-size: 1vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-  /* Стилі для контейнера зі списком */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-  
-  /* Стилі для списку */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-  
-  /*Коли користувач наводить курсор на кнопку */
-.dropdown:hover .dropdown-content {
-    display: block; 
-    margin-left: 5vw;
-    width: 40vw;
-    font-family: Raleway;
-}
-  /*Користувач забирає курсор від кнопки */
-.dropdown:hover .dropbtn {background-color: #790a0ac7; color: #ffffff;}
-  
- /*Стилі для частин випадаючої таблиці*/
-tbody{
-    height: 10vw;
+tr{
+    border-bottom: solid;
+    background-color: #969696ad;
 }
 .td-price{
     padding-left: 1.7vw;
-}
-  
-.drop-second{
-    margin-top: 2vw;
 }
 .tbody-solar{
     height: 5vw;
@@ -126,20 +99,19 @@ tbody{
 .td-price-solar{
     padding-left: 0.5vw;
 }
-
 .contacts{
     display: none;
 }
 
 /*Карта, стрілка, номер тел.*/
 .big-map-p, .right-number{
-    margin-top: 13vw;
+    margin-top: 28vw;
     font-size: 2.5vw;
     color: #ffffff;
     text-shadow: #000000 2px 2px 10px;
 }
 
-.right-map{
+.boychuk-map{
     margin-top: 0vw;
     border:solid;
     border-width: 5px;
@@ -147,6 +119,9 @@ tbody{
     width:20vw;
     height:20vw;
     border-color: rgba(0, 0, 0, 0.478); 
+}
+.loban-map{
+    margin-top: 11vw;
 }
 .right-number{
     margin-top: 3vw;
@@ -160,57 +135,10 @@ tbody{
     width: 7vw;
     position: absolute;
     right:10vw;
-    top: 20vw;
+    top: 35vw;
     transform: scale(-1,1) rotate(55deg);
 }
 
-/*Акція*/
-
-.btn{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 10vw;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: all .4s;
-    margin-top: 10vw;
-    align-self: center;
-}
-.btn .inner{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -100%;
-    z-index: -1;
-    transition: all .4s;
-}
-  
-.btn button{
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    color: white;
-    font-size: 1vw;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.btn:hover{
-    transform: scale(1.03);
-}
-  
-.btn:hover .inner{
-    left: 0;
-}
-  
-.btn1 .inner{
-    background: -webkit-linear-gradient(right, #353535e9,  #790a0ad4, #393939af,  #790a0acf);
-}
 
 .attention {
     align-self: flex-start;
@@ -269,6 +197,54 @@ tbody{
     margin-right: 2.5vw;
     cursor: pointer;
 }
+.instagram{
+    width: 5vw;
+    margin-top: 6.6vw;
+    opacity: 0.8;
+}
+
+/*Акція*/
+.action{
+    width: 30vw;
+    height: 10vw;
+    background-color: #2b2b2bc2;
+    margin-top: 10vw;
+    align-self: center;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+}
+.action:hover{
+    background-color: #790a0ac7;
+}
+
+.gym-text{
+    width: 90%;
+    background-color: #2b2b2bb9;
+    margin-left: 3vw;
+    color: #ffffff;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+    font-size: 1.2vw;
+
+}
+
+.num{
+    font-size: 1.5vw; 
+    color: #790a0ac7;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+.small-map{
+    display: none;
+}
+
+.action-small-width{
+    display: none;
+}
 
 /*Адаптивні стилі*/
 /*1024 px*/
@@ -293,6 +269,12 @@ tbody{
         margin-top: 7vw;
         margin-right: 5vw;
     }
+    .instagram{
+        width: 5vw;
+        margin-top: 6.6vw;
+    }
+    
+  
 }
 
 /*768 px*/
@@ -300,6 +282,11 @@ tbody{
     .title{
         margin-top: 5vw;
         font-size: 5vw;
+    }
+    .title-gym{
+        margin-top: 0;
+        font-size: 2.49vw; 
+        margin-bottom:5vw;
     }
     .location-boychuk{
         font-size: 3vw;
@@ -317,15 +304,27 @@ tbody{
         font-size: 1.7vw;
     }
     .big-map-p {
-        margin-top: 19vw;
+        margin-top: 36vw;
     }
     .right-arrow{
-        top: 26vw;
+        top: 45vw;
+    }
+
+    .loban-map{
+        margin-top: 32vw;
+    }
+    th {
+        font-size: 1.4vw;
+    }
+    .gym-text {
+        font-size: 1.8vw;
+        letter-spacing: 0.7px;
     }
 }
 
 /*555 px*/
 @media(max-width: 555px){
+
    
     .left-side{
         width: 100%;
@@ -348,15 +347,25 @@ tbody{
     }
     .location-lobanovskiy, .location-boychuk{
         margin-bottom: 5vw;
-        font-size: 3vw;
+        font-size: 4vw;
+        align-self: center;
+        text-align: center;
     }
     .location-boychuk{
         margin-left: 0;
+        margin-bottom: 2vw;
     }
+
+    .location-lobanovskiy{
+        margin-bottom: 3vw;
+        margin-top: 10vw;
+    }
+
+
     .header{
         width: 96%;
         height: 13vw;
-        background-color: rgb(42 42 42 / 71%);
+        background-color: rgb(68 68 68 / 66%);
         display: flex;
         justify-content: center;
         padding: 2%;
@@ -366,49 +375,15 @@ tbody{
     .adaptive-loc, .adaptive-loc-sec{
         display: flex;
         flex-direction: column;
-    }
-
-    .dropbtn {
-        margin-left: 0vw;
-    }
-    .dropdown:hover .dropdown-content {
-        margin-left: 0vw;
-    }
-    .drop-loban{
-        margin-left: 5vw;
+        width: 90%;
+        align-self: center;
     }
 
     .left-side{
         display: flex;
-
-    }
-   
-    .map-p{
-        margin-top: 10vw;
-    }
-    .map{
-        align-self: center;
-        margin-top: -35vw;
-        border:solid;
-        border-width: 5px;
-        margin-right: 10vw;
-        border-color: rgba(0, 0, 0, 0.478);
-        box-shadow: #2B2B2B 5px 5px;
-        align-self: flex-end;
-    }
-    .map-card{
-        width:40vw;
-        height:40vw;
     }
 
-    .arrow{
-        width: 20vw;
-        margin-left: 20vw;
-    }
     
-    .number{
-        font-size: 4vw;
-    }
     .contacts{
         display: contents;
     }
@@ -418,24 +393,36 @@ tbody{
         margin-right: 5vw;
     }
     .img-socialmedia{
-        width: 7.8vw;
+        width: 7.5vw;
         margin-left: 1vw;
         margin-right: 3vw;
     }
+    .instagram{
+        width: 8.8vw;
+        margin-top: 6.6vw;
+        opacity: 0.8;
+    }
+    
     .action{
+        display: none;
+    }
+    .action-small-width{
         width: 50vw;
         height: 20vw;
         background-color: #2b2b2b87;
-        margin-top: 10vw;
+        margin-top: 2vw;
         align-self: center;
         border-radius: 1px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2vw;
         font-family: Raleway;
     }
+
     .action:hover{
         background-color: #790a0ac7;
     }
+
     .attention {
         align-self: flex-start;
         margin: 0;
@@ -462,9 +449,67 @@ tbody{
         margin-right: 2vw;
         font-family: Raleway;
     }
-    .btn{
-        height: 20vw;
+    p{
+        margin-left: 0vw;
     }
+    table{
+        height: 30vw;
+    }
+    .solar-table{
+        width: 50%;
+        align-self: center;
+        margin-left: 0vw;
+        height: 15vw;
+    }
+    .solar-text{
+        width: 50%;
+        align-self: center;
+        margin-left: 0;
+    }
+    .big-map-p{
+        margin-top: 6vw;
+        align-self: center;
+        font-size: 3vw;
+        
+    }
+    .boychuk-map{
+        align-self: center;
+        margin-left: 0;
+        width: 30vw;
+        height: 30vw;
+    }
+    .right-map-card{
+        width: 30vw;
+        height: 30vw;
+    }
+    .small-map{
+        display: block;
+    }
+    
+    tr {
+        font-size:2.2vw;;
+    }
+    .gym-text {
+        font-size: 2.5vw;
+        letter-spacing: 0.7px;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+    th {
+        font-size: 2vw;
+    }
+    .title-gym{
+        font-size: 4.6vw;
+    }
+
+    .num{
+        font-size: 2vw; 
+        color: #790a0ac7;
+        align-self: center;
+        margin: 0;
+
+    }
+   
     
 }
 /*377 px*/
@@ -481,8 +526,8 @@ tbody{
         font-size: 9vw;
     }
     .location-lobanovskiy, .location-boychuk{
-        font-size: 4vw;
-        margin-bottom: 5vw;
+        font-size: 5vw;
+        margin-bottom: 3vw;
         align-self: center;
     }
 
@@ -499,11 +544,13 @@ tbody{
         margin-left: 0vw;
     }
 
+    .action{
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+    }
+
     tbody{
         height: 20vw;
-    }
-    tr{
-        font-size: 2.5vw;
     }
 
     .p-footer{
@@ -514,6 +561,82 @@ tbody{
         margin-left: 2vw;
         margin-right: 4vw;
     }
+    .instagram {
+        width: 10vw;
+        margin-top: 6.2vw;
+    }
+
+    table{
+        height: 30vw;
+        margin-left: 4vw;
+    }
+    .solar-table{
+        width: 50%;
+        align-self: center;
+        margin-left: 0vw;
+        height: 15vw;
+    }
+    .solar-text{
+        width: 50%;
+        align-self: center;
+        margin-left: 0;
+    }
+    .big-map-p{
+        margin-top: 6vw;
+        align-self: center;
+        font-size: 4vw;   
+    }
+    .boychuk-map{
+        align-self: center;
+        margin-left: 0;
+        width: 40vw;
+        height: 40vw;
+    }
+    .right-map-card{
+        width: 40vw;
+        height: 40vw;
+    }
+    .small-map{
+        display: block;
+    }
+    
+    tr {
+        font-size: 2.9vw;
+        padding: 2vw;
+    }
+    .gym-text {
+        font-size: 2.5vw;
+        letter-spacing: 0.7px;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        margin-left: 4vw;
+    }
+    .solar-table{
+        width: 50%;
+        align-self: center;
+        margin-left: 0vw;
+        height: 15vw;
+    }
+    .solar-text{
+        width: 50%;
+        align-self: center;
+        margin-left: 0;
+    }
+ 
+    th {
+        font-size: 2.8vw;
+    }
+    .title-gym{
+        font-size: 4.6vw;
+    }
+
+    .num{
+        font-size: 3vw; 
+        color: #790a0ac7;
+        align-self: center;
+        margin: 0;
+    }
+   
    
 
 }
