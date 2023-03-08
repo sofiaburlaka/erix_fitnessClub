@@ -164,6 +164,81 @@ tbody{
     transform: scale(-1,1) rotate(55deg);
 }
 
+/*Акція*/
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 10vw;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .4s;
+    margin-top: 10vw;
+    align-self: center;
+}
+.btn .inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+}
+  
+.btn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+  
+.btn:hover .inner{
+    left: 0;
+}
+  
+.btn1 .inner{
+    background: -webkit-linear-gradient(right, #353535e9,  #790a0ad4, #393939af,  #790a0acf);
+}
+
+.attention {
+    align-self: flex-start;
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.7vw;
+    margin-top:1vw;
+    margin-left: 1vw;
+    font-family: Raleway;
+}
+.take-fr {
+    align-self: center;
+    margin: 0;
+    font-size: 1.5vw;
+    color: #ffffff;
+    margin-top: 0vw;
+    margin-left: 2.5vw;
+    font-family: Raleway;
+}
+.surprise {
+    align-self: flex-end;
+    margin: 0;
+    font-size: 1.6vw;
+    color: #ffffff;
+    margin-right: 1vw;
+    font-family: Raleway;
+}
+
 /*Футер*/
 
 .footer-line{
@@ -347,6 +422,50 @@ tbody{
         margin-left: 1vw;
         margin-right: 3vw;
     }
+    .action{
+        width: 50vw;
+        height: 20vw;
+        background-color: #2b2b2b87;
+        margin-top: 10vw;
+        align-self: center;
+        border-radius: 1px;
+        display: flex;
+        flex-direction: column;
+        font-family: Raleway;
+    }
+    .action:hover{
+        background-color: #790a0ac7;
+    }
+    .attention {
+        align-self: flex-start;
+        margin: 0;
+        color: #ffffff;
+        font-size: 3.6vw;
+        margin-top: 1.6vw;
+        margin-left: 2vw;
+        font-family: Raleway;
+    }
+    .take-fr {
+        align-self: center;
+        margin: 0;
+        font-size: 3vw;
+        color: #ffffff;
+        margin-top: 1vw;
+        margin-left: 4vw;
+        font-family: Raleway;
+    }
+    .surprise {
+        align-self: flex-end;
+        margin: 0;
+        font-size: 3vw;
+        color: #ffffff;
+        margin-right: 2vw;
+        font-family: Raleway;
+    }
+    .btn{
+        height: 20vw;
+    }
+    
 }
 /*377 px*/
 @media(max-width: 377px){
